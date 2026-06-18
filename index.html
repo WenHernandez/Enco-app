@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos de Entrega</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para los iconos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Estilos personalizados -->
+    <style src="./style.css"></style>
+</head>
+<body class="min-h-screen bg-sky-50 text-sky-900 font-sans">         
+   <!-- Encabezado y Buscador -->
+    <header class="bg-white shadow-md sticky top-0 z-10 border-b border-sky-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
+                <!-- Logo y Título -->
+                <div class="flex items-center gap-3 text-sky-700">
+                    <div class="p-2 bg-sky-100 rounded-lg text-sky-600">
+                        <i data-lucide="package" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-tight text-sky-800 leading-tight">Mis Entregas</h1>
+                        <p class="text-xs text-sky-600 font-medium">Galería de puntos de encuentro</p>
+                    </div>
+                </div>
+                
+                <!-- Buscador Instantáneo -->
+                <div class="w-full sm:max-w-md relative group">
+                    <div class="relative flex items-center w-full h-12 rounded-xl focus-within:ring-2 ring-sky-800 
+                    bg-sky-100 overflow-hidden transition-all shadow-inner">
+                        <div class="grid place-items-center h-full w-12 text-sky-800">
+                            <i data-lucide="search" class="w-5 h-5"></i>
+                        </div>
+
+                        <input
+                            id="searchInput"
+                            class="peer h-full w-full outline-none text-sm text-sky-700 pr-10 bg-transparent placeholder-sky-800"
+                            type="text"
+                            placeholder="Buscar por ciudad (ej. San Miguel, Santa Ana)..."
+                        /> 
+                        
+                        <button 
+                            id="clearBtn"
+                            class="hidden absolute right-3 text-sky-400 hover:text-sky-600 text-xs font-bold"
+                            title="Limpiar búsqueda"
+                        >
+                            ✕
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Contador de resultados -->
+        <div class="mb-6 flex items-center text-sky-800 text-sm font-medium">
+            <i data-lucide="map" class="w-4 h-4 mr-2 text-sky-800"></i>
+            <span id="resultsCount">Cargando puntos de entrega...</span>
+        </div>
+
+        <!-- Estado: Sin Resultados -->
+        <div id="emptyState" class="hidden text-center py-20 bg-white rounded-2xl shadow-sm border border-sky-100">
+            <div class="w-20 h-20 bg-sky-50 rounded-full flex items-center justify-center mx-auto mb-4 text-sky-400">
+                <i data-lucide="map-pin" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-medium text-sky-700 mb-2">No encontramos ese punto</h3>
+            <p class="text-sky-500" id="emptyStateMessage">No hay ciudades o lugares que coincidan con tu búsqueda.</p>
+        </div>
+
+        <!-- Galería de Imágenes (Tarjetas) -->
+        <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            <!-- Las tarjetas se insertarán aquí dinámicamente mediante JavaScript -->
+        </div>
+
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
