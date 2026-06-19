@@ -41,8 +41,8 @@ def generar_datos_galeria():
         
         if "-" in nombre_sin_ext:
             partes = nombre_sin_ext.split("-", 1) # Solo dividir por el primer guión
-            ciudad = partes[1].strip()
-            lugar = partes[0].strip()
+            ciudad = partes[0].strip()
+            lugar = partes[1].strip()
             
         # Crear el diccionario de datos para cada imagen
         item_data = {
@@ -57,7 +57,7 @@ def generar_datos_galeria():
         datos_galeria.append(item_data)
         
     # Convertir a formato JavaScript (JSON)
-    js_codigo = "const deliveryData = " + json.dumps(datos_galeria, indent=4, ensure_ascii=False) + ";"
+    js_codigo = "const MY_DELIVERY_POINTS = " + json.dumps(datos_galeria, indent=4, ensure_ascii=False) + ";"
     
     # Guardar en un archivo de texto
     nombre_archivo_salida = "codigo_para_pegar.txt"
@@ -65,7 +65,7 @@ def generar_datos_galeria():
         f.write(js_codigo)
         
     print(f"\n🎉 ¡Listo! Se ha creado el archivo '{nombre_archivo_salida}'.")
-    print("Abre ese archivo, copia todo el texto y reemplaza la sección 'const deliveryData = [...]' en tu HTML.")
+    print("Abre ese archivo, copia todo el texto y reemplaza la sección 'const MY_DELIVERY_POINTS = [...]' en tu HTML.")
 
 if __name__ == "__main__":
     generar_datos_galeria()
