@@ -1,4 +1,4 @@
-const deliveryData = [
+const MY_DELIVERY_POINTS = [
     {
         "id": 1,
         "city": "ACAJUTLA",
@@ -284,14 +284,14 @@ const deliveryData = [
     {
         "id": 48,
         "city": "COJUTEPEQUE",
-        "locationName": "AGENCIA",
-        "imageUrl": "imagenes/COJUTEPEQUE - AGENCIA.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/COJUTEPEQUE - AGENCIA MELO.jpg"
     },
     {
         "id": 49,
         "city": "COJUTEPEQUE",
-        "locationName": "MELO",
-        "imageUrl": "imagenes/COJUTEPEQUE - MELO.jpg"
+        "locationName": "AGENCIA",
+        "imageUrl": "imagenes/COJUTEPEQUE - AGENCIA.jpg"
     },
     {
         "id": 50,
@@ -518,8 +518,8 @@ const deliveryData = [
     {
         "id": 87,
         "city": "ILOBASCO",
-        "locationName": "MELO",
-        "imageUrl": "imagenes/ILOBASCO - MELO.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/ILOBASCO - AGENCIA MELO.jpg"
     },
     {
         "id": 88,
@@ -1172,20 +1172,20 @@ const deliveryData = [
     {
         "id": 196,
         "city": "SAN MIGUEL",
-        "locationName": "AGENCIA MELO",
-        "imageUrl": "imagenes/SAN MIGUEL - AGENCIA MELO.jpg"
+        "locationName": "AGENCIA BODEGA",
+        "imageUrl": "imagenes/SAN MIGUEL - AGENCIA BODEGA.jpg"
     },
     {
         "id": 197,
         "city": "SAN MIGUEL",
-        "locationName": "AGENCIA",
-        "imageUrl": "imagenes/SAN MIGUEL - AGENCIA.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/SAN MIGUEL - AGENCIA MELO.jpg"
     },
     {
         "id": 198,
         "city": "SAN MIGUEL",
-        "locationName": "BODEGA AGENCIA",
-        "imageUrl": "imagenes/SAN MIGUEL - BODEGA AGENCIA.jpg"
+        "locationName": "AGENCIA",
+        "imageUrl": "imagenes/SAN MIGUEL - AGENCIA.jpg"
     },
     {
         "id": 199,
@@ -1196,8 +1196,8 @@ const deliveryData = [
     {
         "id": 200,
         "city": "SAN RAFAEL CEDROS",
-        "locationName": "MELO",
-        "imageUrl": "imagenes/SAN RAFAEL CEDROS - MELO.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/SAN RAFAEL CEDROS - AGENCIA MELO.jpg"
     },
     {
         "id": 201,
@@ -1256,14 +1256,14 @@ const deliveryData = [
     {
         "id": 210,
         "city": "SAN VICENTE",
-        "locationName": "AGENCIA",
-        "imageUrl": "imagenes/SAN VICENTE - AGENCIA.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/SAN VICENTE - AGENCIA MELO.jpg"
     },
     {
         "id": 211,
         "city": "SAN VICENTE",
-        "locationName": "MELO",
-        "imageUrl": "imagenes/SAN VICENTE - MELO.jpg"
+        "locationName": "AGENCIA",
+        "imageUrl": "imagenes/SAN VICENTE - AGENCIA.jpg"
     },
     {
         "id": 212,
@@ -1273,294 +1273,288 @@ const deliveryData = [
     },
     {
         "id": 213,
-        "city": "SANTA ANA 1 Y 2",
-        "locationName": "SANTA ANA 1 Y 2",
-        "imageUrl": "imagenes/SANTA ANA 1 Y 2.jpg"
-    },
-    {
-        "id": 214,
         "city": "SANTA ANA CENTRO",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SANTA ANA CENTRO - AGENCIA.jpg"
     },
     {
-        "id": 215,
+        "id": 214,
         "city": "SANTA ANA PLAZA 33",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SANTA ANA PLAZA 33 - AGENCIA.jpg"
     },
     {
-        "id": 216,
+        "id": 215,
         "city": "SANTA ELENA",
         "locationName": "SANTA ELENA",
         "imageUrl": "imagenes/SANTA ELENA.jpg"
     },
     {
-        "id": 217,
+        "id": 216,
         "city": "SANTA MARIA",
         "locationName": "SANTA MARIA",
         "imageUrl": "imagenes/SANTA MARIA.jpg"
     },
     {
-        "id": 218,
+        "id": 217,
         "city": "SANTA ROSA DE LIMA",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SANTA ROSA DE LIMA - AGENCIA.jpg"
     },
     {
-        "id": 219,
+        "id": 218,
         "city": "SANTA ROSA DE LIMA",
         "locationName": "SANTA ROSA DE LIMA",
         "imageUrl": "imagenes/SANTA ROSA DE LIMA.jpg"
     },
     {
-        "id": 220,
+        "id": 219,
         "city": "SANTA TECLA AGENCIA",
         "locationName": "SANTA TECLA AGENCIA",
         "imageUrl": "imagenes/SANTA TECLA AGENCIA.jpg"
     },
     {
-        "id": 221,
+        "id": 220,
         "city": "SANTIAGO DE LA FRONTERA",
         "locationName": "SANTIAGO DE LA FRONTERA",
         "imageUrl": "imagenes/SANTIAGO DE LA FRONTERA.jpg"
     },
     {
-        "id": 222,
+        "id": 221,
         "city": "SANTIAGO DE MARIA",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SANTIAGO DE MARIA - AGENCIA.jpg"
     },
     {
-        "id": 223,
+        "id": 222,
         "city": "SANTIAGO NONUALCO",
         "locationName": "MELO",
         "imageUrl": "imagenes/SANTIAGO NONUALCO - MELO.jpg"
     },
     {
-        "id": 224,
+        "id": 223,
         "city": "SANTIAGO NONUALCO",
         "locationName": "SANTIAGO NONUALCO",
         "imageUrl": "imagenes/SANTIAGO NONUALCO.jpg"
     },
     {
-        "id": 225,
+        "id": 224,
         "city": "SANTIAGO TEXACUANGO",
         "locationName": "SANTIAGO TEXACUANGO",
         "imageUrl": "imagenes/SANTIAGO TEXACUANGO.jpg"
     },
     {
-        "id": 226,
+        "id": 225,
         "city": "SANTO DOMINGO",
         "locationName": "SANTO DOMINGO",
         "imageUrl": "imagenes/SANTO DOMINGO.jpg"
     },
     {
-        "id": 227,
+        "id": 226,
         "city": "SANTO TOMAS",
         "locationName": "SANTO TOMAS",
         "imageUrl": "imagenes/SANTO TOMAS.jpg"
     },
     {
-        "id": 228,
+        "id": 227,
         "city": "SENSEMBRA",
         "locationName": "SENSEMBRA",
         "imageUrl": "imagenes/SENSEMBRA.jpg"
     },
     {
-        "id": 229,
+        "id": 228,
         "city": "SENSUNTEPEQUE",
-        "locationName": "MELO",
-        "imageUrl": "imagenes/SENSUNTEPEQUE - MELO.jpg"
+        "locationName": "AGENCIA MELO",
+        "imageUrl": "imagenes/SENSUNTEPEQUE - AGENCIA MELO.jpg"
     },
     {
-        "id": 230,
+        "id": 229,
         "city": "SENSUNTEPEQUE",
         "locationName": "SENSUNTEPEQUE",
         "imageUrl": "imagenes/SENSUNTEPEQUE.jpg"
     },
     {
-        "id": 231,
+        "id": 230,
         "city": "SESORI",
         "locationName": "SESORI",
         "imageUrl": "imagenes/SESORI.jpg"
     },
     {
-        "id": 232,
+        "id": 231,
         "city": "SOCIEDAD",
         "locationName": "SOCIEDAD",
         "imageUrl": "imagenes/SOCIEDAD.jpg"
     },
     {
-        "id": 233,
+        "id": 232,
         "city": "SONSONATE",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SONSONATE - AGENCIA.jpg"
     },
     {
-        "id": 234,
+        "id": 233,
         "city": "SONZACATE",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SONZACATE - AGENCIA.jpg"
     },
     {
-        "id": 235,
+        "id": 234,
         "city": "SONZACATE",
         "locationName": "SONZACATE",
         "imageUrl": "imagenes/SONZACATE.jpg"
     },
     {
-        "id": 236,
+        "id": 235,
         "city": "SOYAPANGO",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SOYAPANGO - AGENCIA.jpg"
     },
     {
-        "id": 237,
+        "id": 236,
         "city": "SOYAPANGO PLAZA MUNDO",
         "locationName": "SOYAPANGO PLAZA MUNDO",
         "imageUrl": "imagenes/SOYAPANGO PLAZA MUNDO.jpg"
     },
     {
-        "id": 238,
+        "id": 237,
         "city": "SOYAPANGO UNICENTRO",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/SOYAPANGO UNICENTRO - AGENCIA.jpg"
     },
     {
-        "id": 239,
+        "id": 238,
         "city": "SUCHITOTO",
         "locationName": "SUCHITOTO",
         "imageUrl": "imagenes/SUCHITOTO.jpg"
     },
     {
-        "id": 240,
+        "id": 239,
         "city": "TACACHICO",
         "locationName": "TACACHICO",
         "imageUrl": "imagenes/TACACHICO.jpg"
     },
     {
-        "id": 241,
+        "id": 240,
         "city": "TECAPAN",
         "locationName": "TECAPAN",
         "imageUrl": "imagenes/TECAPAN.jpg"
     },
     {
-        "id": 242,
+        "id": 241,
         "city": "TECOLUCA",
         "locationName": "TECOLUCA",
         "imageUrl": "imagenes/TECOLUCA.jpg"
     },
     {
-        "id": 243,
+        "id": 242,
         "city": "TEJUTEPEQUE",
         "locationName": "TEJUTEPEQUE",
         "imageUrl": "imagenes/TEJUTEPEQUE.jpg"
     },
     {
-        "id": 244,
+        "id": 243,
         "city": "TEJUTLA",
         "locationName": "TEJUTLA",
         "imageUrl": "imagenes/TEJUTLA.jpg"
     },
     {
-        "id": 245,
+        "id": 244,
         "city": "TERMINAL DE SONSONATE",
         "locationName": "TERMINAL DE SONSONATE",
         "imageUrl": "imagenes/TERMINAL DE SONSONATE.jpg"
     },
     {
-        "id": 246,
+        "id": 245,
         "city": "TEXISTEPEQUE",
         "locationName": "MELO",
         "imageUrl": "imagenes/TEXISTEPEQUE - MELO.jpg"
     },
     {
-        "id": 247,
+        "id": 246,
         "city": "TEXISTEPEQUE",
         "locationName": "TEXISTEPEQUE",
         "imageUrl": "imagenes/TEXISTEPEQUE.jpg"
     },
     {
-        "id": 248,
+        "id": 247,
         "city": "TIERRA BLANCA",
         "locationName": "TIERRA BLANCA",
         "imageUrl": "imagenes/TIERRA BLANCA.jpg"
     },
     {
-        "id": 249,
+        "id": 248,
         "city": "TONACATEPEQUE",
         "locationName": "TONACATEPEQUE",
         "imageUrl": "imagenes/TONACATEPEQUE.jpg"
     },
     {
-        "id": 250,
+        "id": 249,
         "city": "TURIN",
         "locationName": "TURIN",
         "imageUrl": "imagenes/TURIN.jpg"
     },
     {
-        "id": 251,
+        "id": 250,
         "city": "ULUAZAPA",
         "locationName": "ULUAZAPA",
         "imageUrl": "imagenes/ULUAZAPA.jpg"
     },
     {
-        "id": 252,
+        "id": 251,
         "city": "USULUTAN",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/USULUTAN - AGENCIA.jpg"
     },
     {
-        "id": 253,
+        "id": 252,
         "city": "USULUTAN",
         "locationName": "USULUTAN",
         "imageUrl": "imagenes/USULUTAN.jpg"
     },
     {
-        "id": 254,
+        "id": 253,
         "city": "VERSALLES",
         "locationName": "VERSALLES",
         "imageUrl": "imagenes/VERSALLES.jpg"
     },
     {
-        "id": 255,
+        "id": 254,
         "city": "YAMABAL",
         "locationName": "YAMABAL",
         "imageUrl": "imagenes/YAMABAL.jpg"
     },
     {
-        "id": 256,
+        "id": 255,
         "city": "YOLOAIQUIN",
         "locationName": "YOLOAIQUIN",
         "imageUrl": "imagenes/YOLOAIQUIN.jpg"
     },
     {
-        "id": 257,
+        "id": 256,
         "city": "YUCUAIQUIN",
         "locationName": "YUCUAIQUIN",
         "imageUrl": "imagenes/YUCUAIQUIN.jpg"
     },
     {
-        "id": 258,
+        "id": 257,
         "city": "ZACATECOLUCA",
         "locationName": "AGENCIA",
         "imageUrl": "imagenes/ZACATECOLUCA - AGENCIA.jpg"
     },
     {
-        "id": 259,
+        "id": 258,
         "city": "ZACATECOLUCA",
         "locationName": "ZACATECOLUCA",
         "imageUrl": "imagenes/ZACATECOLUCA.jpg"
     },
     {
-        "id": 260,
+        "id": 259,
         "city": "ZARAGOZA",
         "locationName": "MELO",
         "imageUrl": "imagenes/ZARAGOZA - MELO.jpg"
     },
     {
-        "id": 261,
+        "id": 260,
         "city": "ZARAGOZA",
         "locationName": "ZARAGOZA",
         "imageUrl": "imagenes/ZARAGOZA.jpg"
